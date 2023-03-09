@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('vcs'){
             steps {
-               git: 'https://github.com/Shravanipranay/MusicStore.git'
-               branch: 'declarative'
+               git:'https://github.com/Shravanipranay/MusicStore.git'
+               branch:'declarative'
             }
         }
         stage('build'){
