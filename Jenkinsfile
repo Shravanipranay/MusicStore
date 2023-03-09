@@ -10,6 +10,7 @@ pipeline {
         stage('build'){
            steps {
               sh 'sudo chown ubuntu ./MusicStore/MusicStore.csproj'
+              sh 'sudo chgrp ubuntu ./MusicStore/MusicStore.csproj'
               sh './MusicStore/MusicStore.csproj'
            }
 
