@@ -1,18 +1,18 @@
-pipeline{
-    agent{ lable 'jfrog_1'}
-    stages{
+pipeline {
+    agent { lable 'jfrog_1' }
+    stages {
         stage('vcs'){
-            steps{
+            steps {
                git: 'https://github.com/Shravanipranay/MusicStore.git'
                branch: 'declarative'
             }
         }
         stage('build'){
-           steps{
+           steps {
               sh './MusicStore/MusicStore.csproj'
            }
 
         }
-    }
+    }   
 
 }
