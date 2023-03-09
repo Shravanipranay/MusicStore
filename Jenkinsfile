@@ -9,8 +9,7 @@ pipeline {
         }
         stage('build'){
            steps {
-              sh 'sudo chmod "777" ./MusicStore/MusicStore.csproj'
-              sh './MusicStore/MusicStore.csproj'
+              sh 'dotnet build ./MusicStore/MusicStore.csproj'
            }
 
         }
