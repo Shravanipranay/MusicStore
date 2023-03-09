@@ -15,7 +15,7 @@ pipeline {
         }
         stage('artifacts'){
             steps {
-                 archiveArtifacts artifacts : '**/.zip'
+                 archiveArtifacts artifacts : '**/.dll'
             }
         }
     }   
